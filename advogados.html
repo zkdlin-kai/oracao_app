@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos dos Advogados Online</title>
+    <link rel="stylesheet" href="adstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Contatos de Advogados Online do Unidos em Oração</h1>
+    </header>
+    <main>
+        <section class="lawyers-list">">
+            <h2>Advogados Disponíveis</h2>
+            <ul>
+                <li>
+                    <h3>Dr. Livia </h3>
+                    <p>Especialidade: Direito Penal</p>
+                    <button onclick="contactForm('Dr. Livia Ferreira ')">Contato: 75 998160309</button>
+                </li>
+                <li>
+                    <h3>Dr. Eduardo Souza </h3>
+                    <p>Especialidade: Direito Trabalhista</p>
+                    <button onclick="contactForm('Dr.Eduardo Souza')">Contato:71 998223400</button>
+                </li>
+                <!-- Adicione mais  conforme necessário -->
+            </ul>
+        </section>
+        <section class="contact-form" id="contactForm">
+            <h2>Formulário de Contato</h2>
+            <form id="form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="hidden" id="lawyer" name="lawyer">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Contatos de Advogados Online. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
